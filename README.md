@@ -1,4 +1,7 @@
 # la-story-telling
 
-raw :
--   ubuntu : https://raw.githubusercontent.com/andjoy404/la-story-telling/main/ubuntu-deployemnt.yaml
+```
+docker run -d -p 5001:5000 --restart=always --name registry registry:2
+docker build -t localhost:5001/nginx:dataeng -f nginx.Dockerfile .
+docker push localhost:5001/nginx:dataeng
+```
